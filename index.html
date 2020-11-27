@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button type="button" onclick="get()">Get random fact</button>
+
+<div id="content"></div>
+
+<script>
+    function get() {
+        fetch("http://localhost:8090/fact")
+            .then(response => response.json())
+            .then(jsonArray => document.getElementById("content").innerText = jsonArray[0].CONTENT);
+    }
+</script>
+
+</body>
+</html>
