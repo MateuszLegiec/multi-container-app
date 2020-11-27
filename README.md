@@ -1,5 +1,4 @@
-
-#Multi-container applications - Docker Compose
+# Multi-container applications - Docker Compose
 
 ### ./app - application source code
 
